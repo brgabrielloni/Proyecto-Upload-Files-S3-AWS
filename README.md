@@ -56,6 +56,7 @@ Proyecto-S3-Uploader/
 │
 └── venv/                        # Entorno virtual de Python
 
+---
 
 ## ✅ Requisitos
 
