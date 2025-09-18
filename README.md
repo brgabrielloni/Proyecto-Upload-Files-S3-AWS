@@ -28,6 +28,7 @@ Buenas prácticas utilizadas:
 
 La estructura del proyecto es la siguiente: 
 
+```text
 Proyecto-S3-Uploader/
 │
 ├── .env                         # Variables de entorno (credenciales)
@@ -54,6 +55,7 @@ Proyecto-S3-Uploader/
 │   └── logger.py                # Configuración de logging para monitorear la ejecución
 │
 └── venv/                        # Entorno virtual de Python
+```
 
 ---
 
