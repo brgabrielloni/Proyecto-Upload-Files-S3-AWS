@@ -26,7 +26,6 @@ def create_client_s3():
         region_name=settings.AWS_REGION
     )
 
-
 # función que guarda el df como csv
 def save_df_to_csv(df: pd.DataFrame, ruta_csv: str) -> None:
     df.to_csv(ruta_csv, index=False)

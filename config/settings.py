@@ -35,6 +35,6 @@ input_file = "data/input/pacientes_crudo.csv"
 output_file = "data/output/pacientes_procesado.csv"
 
 #S3 donde se subirá el archivo procesado
-s3_key = "uploads/pacientes_crudo.csv"
+s3_key = "uploads/pacientes_procesado.csv"
 
 #-------------------------------------------------------------------------------------------------------------

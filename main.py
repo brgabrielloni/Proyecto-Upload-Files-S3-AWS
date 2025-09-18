@@ -53,7 +53,7 @@ def main():
 
     logger.info("Subiendo a S3")
 
-    exito = load_file_to_s3(input_file, s3_key)
+    exito = load_file_to_s3(output_file, s3_key)
 
     if exito:
         logger.info("Archivo subido correctamente")
