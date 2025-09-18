@@ -28,7 +28,6 @@ Buenas prácticas utilizadas:
 
 La estructura del proyecto es la siguiente: 
 
-```text
 Proyecto-S3-Uploader/
 │
 ├── .env                         # Variables de entorno (credenciales)
