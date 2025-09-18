@@ -7,8 +7,16 @@
 
 ## 📌 Descripción
 
-Este proyecto en Python permite subir archivos a AWS S3 utilizando la librería **boto3**. 
-Para este caso particular, se definió que solo se subirán archivos CSV, 
+Este proyecto en Python permite subir archivos a Amazon S3 utilizando la librería **boto3**. 
+Actualmente, el proyecto está diseñado para trabajar con archivos en formato **CSV**. 
+La función load_csv ubicada en pipeline/load.py se encarga de: 
+- Recibir como parámetro la **ruta del archivo** a cargar (no está limitada a una ruta fija).
+- Leer el archivo CSV utilizando pandas y devolver un **DataFrame** que será luego procesado 
+  por los siguientes pasos del pipeline (transformación, limpieza, guardado). 
+  Este diseño modular permite desacoplar el origen del archivo del proceso de transformación. 
+  Aunque inicialmente sólo se admite el formato CSV, la función está estructurada de forma que
+  puede extenderse en el futuro para soportar otros tipos de archivos coomo JSON, Excel, etc,
+  con mínimos cambios.
 
 - Uso de entornos virtuales
 - Manejo seguro de credenciales con archivo `.env`
@@ -57,8 +65,6 @@ AWS_ACCESS_KEY = your_access_key
 AWS_SECRET_ACCESS_KEY = your_secret_key
 AWS_REGION = your_region
 BUCKET_NAME = your_bucket_name
-
-### Importante: nunca subas este archivo a GitHub. Asegurate de incluir .env en tu archivo .gitignore.
 
 ---
 
