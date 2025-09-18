@@ -1,5 +1,9 @@
+#--------------------------------------------------imports---------------------------------------------------
+
 #importar módulo para mostrar mensajes
 import logging
+
+#------------------------------------------------------------------------------------------------------------
 
 #configurar logging y definir que los mensajes se mostraron por la consola estándar
 logging.basicConfig(
@@ -10,5 +14,4 @@ logging.basicConfig(
     ]
 )
 
-#
 logger = logging.getLogger("file_s3_uploader")
