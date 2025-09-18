@@ -18,6 +18,8 @@ La función load_csv ubicada en pipeline/load.py se encarga de:
   puede extenderse en el futuro para soportar otros tipos de archivos coomo JSON, Excel, etc,
   con mínimos cambios.
 
+Buenas prácticas utilizadas:
+
 - Uso de entornos virtuales
 - Manejo seguro de credenciales con archivo `.env`
 - Código limpio y modular
