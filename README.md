@@ -44,14 +44,14 @@ python -m venv venv
 
 Luego activá el entorno virtual según tu sistema operativo:
 
-🔹 Windows CMD
-venv\Scripts\activate.bat
+🔹 Windows CMD:
+    venv\Scripts\activate.bat
 
-🔹 Windows PowerShell
-.\venv\Scripts\activate
+🔹 Windows PowerShell:
+    .\venv\Scripts\activate
 
-🔹 macOS / Linux
-source venv/bin/activate
+🔹 macOS / Linux:
+    source venv/bin/activate
 
 ### 2. Instalar dependencias:
 
@@ -63,10 +63,10 @@ pip install -r requirements.txt
 
 Crea un archivo llamado .env en la raíz del proyecto con tus credenciales de AWS:
 
-AWS_ACCESS_KEY = your_access_key
-AWS_SECRET_ACCESS_KEY = your_secret_key
-AWS_REGION = your_region
-BUCKET_NAME = your_bucket_name
+- AWS_ACCESS_KEY = your_access_key
+- AWS_SECRET_ACCESS_KEY = your_secret_key
+- AWS_REGION = your_region
+- BUCKET_NAME = your_bucket_name
 
 ---
 
