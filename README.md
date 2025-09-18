@@ -24,7 +24,38 @@ Buenas prácticas utilizadas:
 - Manejo seguro de credenciales con archivo `.env`
 - Código limpio y modular
 
----
+## 📁 Estructura del proyecto: 
+
+La estructura del proyecto es la siguiente: 
+
+```text
+Proyecto-S3-Uploader/
+│
+├── .env                         # Variables de entorno (credenciales)
+├── .gitignore                   # Archivos y carpetas excluidos del control de versiones
+├── main.py                      # Script principal: orquesta la carga, transformación y subida a S3
+├── README.md                    # Documentación del proyecto
+├── requirements.txt             # Lista de dependencias necesarias (pip install -r requirements.txt)
+│
+├── config/
+│   └── settings.py              # Configuraciones generales del proyecto (paths, constantes, etc.)
+│
+├── data/
+│   ├── input/
+│   │   └── pacientes_crudo.csv  # Archivo de datos original (sin procesar)
+│   └── output/
+│       └── pacientes_procesado.csv  # Archivo de datos limpio y transformado
+│
+├── pipeline/
+│   ├── load.py                  # Funciones para cargar los datos desde CSV
+│   ├── save.py                  # Funciones para guardar los datos procesados y/o subir a S3
+│   └── transform.py             # Funciones de limpieza y transformación de datos
+│
+├── utils/
+│   └── logger.py                # Configuración de logging para monitorear la ejecución
+│
+└── venv/                        # Entorno virtual de Python
+
 
 ## ✅ Requisitos
 
